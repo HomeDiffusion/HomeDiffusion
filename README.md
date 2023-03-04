@@ -1,30 +1,45 @@
-# HomeDiffusion
+# Home Diffusion
 ## Disrupting Home Design with Stable Diffusion and ControlNet
 
-HomeDiffusion is an open source project that uses Stable Diffusion and ControlNet to revolutionize the way home design is done. With HomeDiffusion, you can run your own design studio and craft beautiful, unique designs with ease.
+[Home Diffusion](https://homes.org/home-diffusion/) is an open source project that uses Stable Diffusion and ControlNet to revolutionize the way home design is done. With Home Diffusion, you can run your own design studio and craft beautiful, unique designs with ease.
 
-## Get Started with HomeDiffusion
+## Examples
+[![Tropical Remodel Before](https://homes.org/images/examples/exterior-tropical-remodel-0001-before.png)](https://www.homes.org)
+[![Tropical Remodel After](https://homes.org/images/examples/exterior-tropical-remodel-0001-after.png)](https://www.homes.org)
 
-HomeDiffusion is easy to use and requires only a GPU to run. Here's what you need to get started:
 
-- A GPU with suggested 12GB of VRAM()
+[![Tropical Remodel Before](https://homes.org/images/examples/exterior-tropical-remodel-0002-before.png)](https://www.homes.org)
+[![Tropical Remodel After](https://homes.org/images/examples/exterior-tropical-remodel-0002-after.png)](https://www.homes.org)
+
+
+[![Tropical Remodel Before](https://homes.org/images/examples/exterior-tropical-remodel-0003-before.png)](https://www.homes.org)
+[![Tropical Remodel After](https://homes.org/images/examples/exterior-tropical-remodel-0003-after.png)](https://www.homes.org)
+
+## Get Started with Home Diffusion
+
+Home Diffusion is easy to use and requires only a GPU to run. Here's what you need to get started:
+
+- A GPU with suggested minimum 12GB of VRAM
 - An internet connection
-- HomeDiffusion software
+- Home Diffusion
 
-Once you have the necessary hardware and software, you can start designing your dream home with HomeDiffusion.
-
-
-# HomeDiffusion
-
-HomeDiffusion is an innovative open source project that enables users to create design concepts for their homes. Through a fine-tuned implementation of Stable Diffusion and ControlNet, HomeDiffusion provides users with an intuitive and powerful tool to create dream homes that fit their exact specifications.
-
-## What is HomeDiffusion?
-
-HomeDiffusion is a revolutionary open source project that utilizes Stable Diffusion and ControlNet to create highly accurate and customizable home designs. HomeDiffusion is a powerful tool that allows users to design their own homes with unprecedented accuracy and precision. 
-
-Users can customize every aspect of their home design, from the overall layout and structure to the smallest details. HomeDiffusion also provides users with access to a library of pre-made designs and templates, so they can quickly find the perfect home design for their needs.
+Once you have the necessary hardware and software, you can start designing your dream home with Home Diffusion.
 
 
+
+## What is Home Diffusion?
+
+Home Diffusion is a revolutionary open source project that utilizes Stable Diffusion and ControlNet to create highly accurate and customizable home designs. Home Diffusion is a powerful tool that allows users to design their own homes with unprecedented accuracy and precision. 
+
+Users can customize every aspect of their home design, from the overall layout and structure to the smallest details. Home Diffusion also provides users with access to a library of pre-made designs and templates, so they can quickly find the perfect home design for their needs.
+
+## How Does It Work?
+
+Home Diffusion is an innovative open source project that enables users to create design concepts for their homes. Through a fine-tuned implementation of Stable Diffusion and ControlNet, Home Diffusion provides users with an intuitive and powerful tool to create dream homes that fit their exact specifications.
+
+
+## Online Demo
+[Home Diffusion Demo](https://homes.org/home-diffusion/demo/)
 
 ## Run locally
 You can run your own design studio with Home Diffusion if you have your own GPU.
@@ -53,4 +68,4 @@ After running thousands of iterations locally, we have set some sane defaults fo
 Thank you to many open source contributors who have made this possible, but especially:
 - [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
 - [Gradio](https://github.com/gradio-app/gradio)
-- [Lyumin Zhang](https://github.com/lllyasviel)
+- [ControlNet](https://github.com/lllyasviel/ControlNet)
