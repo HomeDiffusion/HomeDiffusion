@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  homediffusion:
+    container_name: homediffusion
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 7860:7860
+    volumes:
+      # You must have downloaded the model, or this won't work! See the README for instructions
+      - ./models:/app/models/
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            # If you have multiple GPUs and want to pin certain one(s)
+            device_ids: ['0']
+            capabilities: [ gpu ]

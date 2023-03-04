@@ -4,16 +4,16 @@
 [Home Diffusion](https://homes.org/home-diffusion/) is an open source project that uses Stable Diffusion and ControlNet to revolutionize the way home design is done. With Home Diffusion, you can run your own design studio and craft beautiful, unique designs with ease.
 
 ## Examples
-[![Tropical Remodel Before](https://homes.org/images/examples/exterior-tropical-remodel-0001-before.png)](https://www.homes.org)
-[![Tropical Remodel After](https://homes.org/images/examples/exterior-tropical-remodel-0001-after.png)](https://www.homes.org)
+[![Tropical Home Remodel Side A Before](https://homes.org/images/examples/exterior-tropical-remodel-0001-before.png)](https://www.homes.org)
+[![Tropical Home Remodel Side A After](https://homes.org/images/examples/exterior-tropical-remodel-0001-after.png)](https://www.homes.org)
 
 
-[![Tropical Remodel Before](https://homes.org/images/examples/exterior-tropical-remodel-0002-before.png)](https://www.homes.org)
-[![Tropical Remodel After](https://homes.org/images/examples/exterior-tropical-remodel-0002-after.png)](https://www.homes.org)
+[![Tropical Home Remodel Side B Before](https://homes.org/images/examples/exterior-tropical-remodel-0002-before.png)](https://www.homes.org)
+[![Tropical Home Remodel Side BAfter](https://homes.org/images/examples/exterior-tropical-remodel-0002-after.png)](https://www.homes.org)
 
 
-[![Tropical Remodel Before](https://homes.org/images/examples/exterior-tropical-remodel-0003-before.png)](https://www.homes.org)
-[![Tropical Remodel After](https://homes.org/images/examples/exterior-tropical-remodel-0003-after.png)](https://www.homes.org)
+[![Tropical Outside Courtyard Pool Remodel Before](https://homes.org/images/examples/exterior-tropical-remodel-0003-before.png)](https://www.homes.org)
+[![Tropical Outside Courtyard Pool Remodel After](https://homes.org/images/examples/exterior-tropical-remodel-0003-after.png)](https://www.homes.org)
 
 ## Get Started with Home Diffusion
 
@@ -50,19 +50,42 @@ Either way, the first step is to download the file and place it in ./models.
 ```bash
 git clone git@github.com:HomeDiffusion/HomeDiffusion.git
 cd HomeDiffusion
-# Download the model, this is ~5.4 GB, so grab a coffee. Thanks to lllyasviel!
+# Download the model, this is ~5.4 GB, so grab a coffee. Thanks to lllyasviel for ControlNet!
 wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_mlsd.pth  -P models/
 ```
 
 ### Launch with conda
 ```bash
-conda env create -f environment.yaml
+conda env create -f environment.yml
 conda activate homeDiffusion
+# Get another coffee. This be slow the first time, but faster in subsequent uses. Varies based on your internet and machine
 ```
+
+### Launch with docker
+```bash
+docker-compose up --build
+# Get another coffee. This be slow the first time, but faster in subsequent uses. Varies based on your internet and machine
+```
+
+### Confirm Home Diffusion is running
+Once the build is done, with either `conda` or `docker-compose`, you should see a message like this at the end of the output:
+```bash
+homediffusion    | Loaded model config from [./models/cldm_v15.yaml]
+homediffusion    | Loaded state_dict from [./models/control_sd15_mlsd.pth]
+homediffusion    | Running on local URL:  http://0.0.0.0:7860
+homediffusion    | 
+homediffusion    | To create a public link, set `share=True` in `launch()`.
+```
+
+Open a browser and load `http://0.0.0.0:7860`. Your local instance of Home Diffusion should be running and look like this:
+![Home Diffusion Up and Running](https://homes.org/images/home-diffusion-working.png)
+
 
 ### Advanced Controls
 After running thousands of iterations locally, we have set some sane defaults for you. An advanced user guide is coming soon!
 
+
+Enjoy! Please give us a star if you like Home Diffusion :)
 
 #### Acknowledgements
 Thank you to many open source contributors who have made this possible, but especially:
