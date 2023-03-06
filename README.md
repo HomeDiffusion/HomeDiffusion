@@ -1,6 +1,6 @@
 # Home Diffusion
 ## [Try Online Home Diffusion Demo](https://diffusion.homes.org/)
-user/pass: demo / homediffusion
+user/pass: demo / demo
 
 The demo relies on community resources and may be overloaded at times. Please **DO NOT** use this for automated or production workloads; it is subject to change.
 
