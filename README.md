@@ -1,4 +1,9 @@
 # Home Diffusion
+## [Try Online Home Diffusion Demo](https://diffusion.homes.org/)
+user/pass: demo / homediffusion
+
+The demo relies on community resources and may be overloaded at times. Please **DO NOT** use this for automated or production workloads; it is subject to change.
+
 ## Disrupting Home Design with Stable Diffusion and ControlNet
 
 [Home Diffusion](https://homes.org/home-diffusion/) is an open source project that uses Stable Diffusion and ControlNet to revolutionize the way home design is done. With Home Diffusion, you can run your own design studio and craft beautiful, unique designs with ease.
@@ -36,10 +41,6 @@ Users can customize every aspect of their home design, from the overall layout a
 ## How Does It Work?
 
 Home Diffusion is an innovative open source project that enables users to create design concepts for their homes. Through a fine-tuned implementation of Stable Diffusion and ControlNet, Home Diffusion provides users with an intuitive and powerful tool to create dream homes that fit their exact specifications.
-
-
-## Online Demo
-[Home Diffusion Demo](https://homes.org/home-diffusion/demo/)
 
 ## Run locally
 You can run your own design studio with Home Diffusion if you have your own GPU.
